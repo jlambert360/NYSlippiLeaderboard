@@ -3,12 +3,7 @@ name: Update slippi rankings
 on:
   schedule:
     - cron: "0 * * * *"
-  workflow_call:
-    inputs:
-      from_ci:
-        type: boolean
-        required: false
-        default: true
+  workflow_dispatch:
 
 jobs:
   update:
